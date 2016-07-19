@@ -50,11 +50,6 @@ INSTALLED_APPS = [
 
     'django_extensions',
 
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'osf_oauth2_adapter',
-
     'osf_example_app',
     'osf_models',
 ]

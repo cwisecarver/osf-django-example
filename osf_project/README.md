@@ -1,4 +1,5 @@
 ## To do:
+- Remove hard OSF.IO dependencies from osf_models
 - Document creating a new application
 - Document installing application
 - ~Hook up django_rest_framework JSONAPI package~

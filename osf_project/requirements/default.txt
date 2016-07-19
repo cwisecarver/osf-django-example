@@ -1,12 +1,10 @@
-django==1.9.7
 
+django[bcrypt]==1.9.7
 bcrypt==2.0.0
 
 # django specific utilities
-django[bcrypt]==1.9.7
 django-extensions==1.6.7
 django-model-utils==2.5
-django-allauth==0.25.2
 
 # Fix the Choices for TypedModel.type when using Django 1.9
 # django-typed-models==0.5.0
@@ -51,4 +49,5 @@ raven==5.23.0
 # django-guardian==1.4.4
 
 # our stuff
-git+https://github.com/CenterForOpenScience/osf-models.git@70080188bba9c1af50019498cbe7497b5063e8c8e
+git+https://github.com/CenterForOpenScience/osf-models.git@master
+-e ../osf_example_app/
