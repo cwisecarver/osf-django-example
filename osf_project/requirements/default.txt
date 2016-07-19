@@ -24,6 +24,7 @@ arrow==0.8.0
 furl==0.4.95
 pyyaml==3.11
 pycountry==1.20
+bleach==1.4.3
 
 # postgres & uwsgi
 psycopg2==2.6.1
@@ -49,5 +50,5 @@ raven==5.23.0
 # django-guardian==1.4.4
 
 # our stuff
-git+https://github.com/CenterForOpenScience/osf-models.git@master
+git+https://github.com/CenterForOpenScience/osf-models.git@feature/removing-osf-dependencies
 -e ../osf_example_app/

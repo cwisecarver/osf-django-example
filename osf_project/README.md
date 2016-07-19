@@ -1,3 +1,7 @@
+## Getting Started:
+- Clone the repo
+- 
+
 ## To do:
 - Remove hard OSF.IO dependencies from osf_models
 - Document creating a new application

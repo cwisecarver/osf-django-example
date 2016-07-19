@@ -16,13 +16,13 @@ esac
 shift
 done
 
-pip install -r requirements/local-dev.txt
+pip install -U -r requirements/local-dev.txt
 
 if [ -n "$RESET_DB" ]; then
     python manage.py reset_db --noinput
 fi
 
 python manage.py migrate
-python manage.py runserver_plus --port 8010
+python manage.py runserver_plus 127.0.0.1:8010
 
 
