@@ -12,6 +12,7 @@ git+https://github.com/craigds/django-typed-models.git@7c1eaec06e4a5db188b58cee5
 
 # DRF
 djangorestframework==3.4.0
+djangorestframework-jsonapi==2.0.1
 django-cors-headers==1.1.0
 django-filter==0.13.0
 Markdown==2.6.6
@@ -24,6 +25,7 @@ arrow==0.8.0
 furl==0.4.95
 pyyaml==3.11
 pycountry==1.20
+bleach==1.4.3
 
 # postgres & uwsgi
 psycopg2==2.6.1
@@ -49,5 +51,5 @@ raven==5.23.0
 # django-guardian==1.4.4
 
 # our stuff
-git+https://github.com/CenterForOpenScience/osf-models.git@master
+git+https://github.com/CenterForOpenScience/osf-models.git@feature/removing-osf-dependencies
 -e ../osf_example_app/

@@ -128,3 +128,6 @@ testdir/
 scratch/
 celerybeat.pid
 *.orig
+
+local.py
+db.sqlite3
