@@ -23,6 +23,11 @@ if [ -n "$RESET_DB" ]; then
 fi
 
 python manage.py migrate
+if [ -n "$RESET_DB" ]; then
+    # loads initial data from fixture
+    python manage.py loaddata initial_data.json
+fi
+
 python manage.py runserver_plus 127.0.0.1:8010
 
 

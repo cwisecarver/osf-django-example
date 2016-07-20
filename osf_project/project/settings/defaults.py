@@ -54,17 +54,6 @@ INSTALLED_APPS = [
     'osf_models',
 ]
 
-SOCIALACCOUNT_ADAPTER = 'osf_oauth2_adapter.views.OSFOAuth2Adapter'
-SOCIALACCOUNT_PROVIDERS = \
-    {'osf':
-        {
-            'METHOD': 'oauth2',
-            # TODO Make sure this is the right scope
-            'SCOPE': ['osf.users.all_read'],
-            'AUTH_PARAMS': {'access_type': 'offline'},
-        }
-    }
-
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -130,6 +119,7 @@ DATABASES = {
     },
 }
 
+AUTH_USER_MODEL = 'osf_models.OSFUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators

@@ -1,186 +1,64 @@
 [
 {
-    "model": "contenttypes.contenttype",
+    "model": "osf_models.guid",
     "pk": 1,
     "fields": {
-        "app_label": "admin",
-        "model": "logentry"
+        "guid": "zed5a"
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "osf_models.guid",
     "pk": 2,
     "fields": {
-        "app_label": "auth",
-        "model": "permission"
+        "guid": "ed5wc"
     }
 },
 {
-    "model": "contenttypes.contenttype",
-    "pk": 3,
+    "model": "osf_models.osfuser",
     "fields": {
-        "app_label": "auth",
-        "model": "group"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 4,
-    "fields": {
-        "app_label": "auth",
-        "model": "user"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": {
-        "app_label": "contenttypes",
-        "model": "contenttype"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 6,
-    "fields": {
-        "app_label": "sessions",
-        "model": "session"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 7,
-    "fields": {
-        "app_label": "sites",
-        "model": "site"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 8,
-    "fields": {
-        "app_label": "corsheaders",
-        "model": "corsmodel"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 9,
-    "fields": {
-        "app_label": "zoo",
-        "model": "animal"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 10,
-    "fields": {
-        "app_label": "zoo",
-        "model": "genus"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 11,
-    "fields": {
-        "app_label": "zoo",
-        "model": "bigcat"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 12,
-    "fields": {
-        "app_label": "zoo",
-        "model": "dog"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 13,
-    "fields": {
-        "app_label": "zoo",
-        "model": "cat"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 14,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "versioned"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 15,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "guid"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 16,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "blacklistguid"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 17,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "metaschema"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 18,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "tag"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 19,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "user"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 20,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "contributor"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 21,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "node"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 22,
-    "fields": {
-        "app_label": "osf_models",
-        "model": "nodelog"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "ripfb9hwy7clpz7qwmcp62a87kqdrnf6",
-    "fields": {
-        "session_data": "OTkwYmNkYmRmYmNiYjJiMDUyNWYyOWVkMjc1NWE2OWYyMzc3MjJmYzp7Il9hdXRoX3VzZXJfaGFzaCI6IjVjMDVlZDg5MTcxYzA2OWJkMzkyNWVkNjA0Y2E5MWYwMjMxOGNlYzIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
-        "expire_date": "2016-08-03T02:08:07.519Z"
+        "password": "pbkdf2_sha256$24000$T9dYIDXYvsCa$MqrATXavE272e+onwZEFR7wS56ncjk8pmgU5eH6eKVM=",
+        "last_login": null,
+        "_guid": 2,
+        "username": "admin@cos.io",
+        "fullname": "",
+        "is_registered": false,
+        "is_claimed": false,
+        "security_messages": {},
+        "is_invited": false,
+        "unclaimed_records": {},
+        "contributor_added_email_records": {},
+        "merged_by": null,
+        "verification_key": null,
+        "emails": {},
+        "email_verifications": {},
+        "mailing_lists": {},
+        "mailchimp_mailing_lists": {},
+        "osf_mailing_lists": {
+            "Open Science Framework Help": true
+        },
+        "date_registered": "2016-07-20T14:57:14.025Z",
+        "given_name": "",
+        "middle_names": "",
+        "family_name": "",
+        "suffix": "",
+        "jobs": {},
+        "schools": {},
+        "social": {},
+        "piwik_token": "",
+        "date_last_login": null,
+        "date_confirmed": null,
+        "date_disabled": null,
+        "comments_viewed_timestamp": {},
+        "timezone": "Etc/UTC",
+        "locale": "en_US",
+        "requested_deactivation": false,
+        "notifications_configured": {},
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "system_tags": [],
+        "recently_added": [],
+        "_affiliated_institutions": []
     }
 },
 {
@@ -191,3 +69,4 @@
         "name": "example.com"
     }
 }
+]
