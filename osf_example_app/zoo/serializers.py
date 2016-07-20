@@ -43,7 +43,7 @@ class BigCatSerializer(CatSerializer):
     animals_it_eats = serializers.HyperlinkedRelatedField(
         many=True,
         view_name='bigcat-detail',
-        queryset=models.BigCat
+        queryset=models.Animal.objects.all()
     )
     class Meta:
         model = models.BigCat
