@@ -1,3 +1,9 @@
+## What is this?
+It's a sample django project and a sample django application. The theory is that you copy the patterns used in the example application and you will have an application that will drop into the OSF-django project once it's complete. 
+
+## What does it do?
+It is a django admin that supports your models. It is also an API with a browseable, self-documenting (from docstrings in view classes) interface that delivers data in JSONAPI format automatically.
+
 ## Getting Started:
 - Clone this repo
 - Create a virtual environment
