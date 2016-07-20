@@ -3,8 +3,10 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Let's assume we have a zoo
+from typedmodels.models import TypedModel
 
-class Animal(models.Model):
+
+class Animal(TypedModel):
     name = models.CharField(max_length=255)  # max_length is required for CharFields
     number = models.PositiveIntegerField(verbose_name='a name that will appear in the admin')
     genus = models.ForeignKey('Genus')  # putting things in quotes allows you to use it without
@@ -14,9 +16,11 @@ class Animal(models.Model):
                                                       # self is a magic keyword that relates it to itself
                                                       # you could also specify an imported model or a model name in quotes
 
+    def __repr__(self):
+        return u'<%s: %s>' % (self.__class__.__name__, self.name)
+
     class Meta:
         unique_together = ('name', 'genus')  # this will force name and genus to be unique together
-        abstract = True  # abstract = True means it won't create a table for this model
 
 
 class Genus(models.Model):
@@ -29,8 +33,7 @@ class Cat(Animal):
 
 
 class Dog(Animal):
-    barks = models.BooleanField(default=True)
-
+    fuzzy = models.NullBooleanField()
 
 class BigCat(Cat):
     # this can't have extra fields because it's data will go in the table for Cat

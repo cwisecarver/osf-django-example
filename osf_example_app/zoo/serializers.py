@@ -6,7 +6,7 @@ from zoo import models
 class GenusSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Genus
-        fields = ('name')
+        fields = ('name', )
 
 
 class AnimalSerializer(serializers.ModelSerializer):
@@ -14,26 +14,25 @@ class AnimalSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Animal
-        fields = ('name', 'number', 'genus', 'animals_it_eats')
+        fields = ('name', 'number', 'genus', 'animals_it_eats', )
 
 
 class CatSerializer(AnimalSerializer):
     animals_it_eats = serializers.HyperlinkedRelatedField(
         many=True,
         view_name='cat-detail',
-        queryset=models.Cat
+        queryset=models.Cat.objects.all()
     )
 
     class Meta:
         model = models.Cat
-        excludes = ('number')
 
 
 class DogSerializer(AnimalSerializer):
     animals_it_eats = serializers.HyperlinkedRelatedField(
         many=True,
         view_name='dog-detail',
-        queryset=models.Dog
+        queryset=models.Animal.objects.all()
     )
 
     class Meta:
@@ -48,4 +47,3 @@ class BigCatSerializer(CatSerializer):
     )
     class Meta:
         model = models.BigCat
-        excludes = ('number')
