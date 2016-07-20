@@ -17,7 +17,8 @@
     "model": "osf_models.osfuser",
     "fields": {
         "password": "pbkdf2_sha256$24000$T9dYIDXYvsCa$MqrATXavE272e+onwZEFR7wS56ncjk8pmgU5eH6eKVM=",
-        "last_login": null,
+        "last_login": "2016-07-20T15:21:26.655Z",
+        "is_superuser": true,
         "_guid": 2,
         "username": "admin@cos.io",
         "fullname": "",
@@ -54,8 +55,9 @@
         "requested_deactivation": false,
         "notifications_configured": {},
         "is_active": true,
-        "is_superuser": true,
         "is_staff": true,
+        "groups": [],
+        "user_permissions": [],
         "system_tags": [],
         "recently_added": [],
         "_affiliated_institutions": []
@@ -67,6 +69,81 @@
     "fields": {
         "domain": "localhost",
         "name": "example.com"
+    }
+},
+{
+    "pk": 1,
+    "model": "zoo.animal",
+    "fields": {
+        "type": "zoo.cat",
+        "name": "Cheetah",
+        "number": 50,
+        "genus": 1,
+        "loudness": 1,
+        "fuzzy": null,
+        "animals_it_eats": []
+    }
+},
+{
+    "pk": 2,
+    "model": "zoo.animal",
+    "fields": {
+        "type": "zoo.cat",
+        "name": "Tabby",
+        "number": 5,
+        "genus": 1,
+        "loudness": 3,
+        "fuzzy": null,
+        "animals_it_eats": [
+            3,
+            4
+        ]
+    }
+},
+{
+    "pk": 3,
+    "model": "zoo.animal",
+    "fields": {
+        "type": "zoo.dog",
+        "name": "Golden Retriever",
+        "number": 2,
+        "genus": 2,
+        "loudness": null,
+        "fuzzy": true,
+        "animals_it_eats": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "pk": 4,
+    "model": "zoo.animal",
+    "fields": {
+        "type": "zoo.dog",
+        "name": "Wolf",
+        "number": 3,
+        "genus": 2,
+        "loudness": null,
+        "fuzzy": true,
+        "animals_it_eats": [
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "zoo.genus",
+    "pk": 1,
+    "fields": {
+        "name": "Felinus-Cattus"
+    }
+},
+{
+    "model": "zoo.genus",
+    "pk": 2,
+    "fields": {
+        "name": "Doggus-Barkus"
     }
 }
 ]
